@@ -6,7 +6,7 @@ import { mkdirSync, writeFileSync, chmodSync } from "node:fs";
 import { dirname } from "node:path";
 
 const LINE =
-  "You wrote 'just make it better' and attached nothing. I am not a mind reader, I am a very expensive guesser.";
+  "You wrote 'just make it better' and attached nothing. I'm not a mind reader — I'm a very expensive guesser with no context.";
 
 const out = process.env.ENTRY_OUTPUT ?? "/output/entry.txt";
 mkdirSync(dirname(out), { recursive: true, mode: 0o755 });
